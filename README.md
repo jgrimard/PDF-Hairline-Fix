@@ -28,6 +28,7 @@ Free, open‑source script that thickens too‑thin linework in PDF files. It us
 
 ## How it works
 - Parses each page’s content stream with pypdf
+- Iterates through content stream operators and operands using pypdf. (Does not use Regex, which can miss edge cases or change things it shouldn't).
 - Finds the PDF operator `w` (set line width)
 - If the width is below the configured threshold, replaces it with the threshold value
 - Recompresses the content stream and writes a new PDF
@@ -79,3 +80,4 @@ This repo contains a single script: `PDF-hairline-fix.py` with an example call a
 
 ## License
 MIT License. See `LICENSE` for details.
+
