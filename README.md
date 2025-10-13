@@ -6,11 +6,13 @@ Free, open‑source script that thickens too‑thin linework in PDF files. It us
   <table>
     <tr>
       <td align="center">
-        <img src="docs/Before.png" alt="Before: thin 0 weight hairlines" width="45%" /><br/>
+        <img src="docs/Before.png" alt="Before: thin 0 weight hairlines" /><br/>
         <sub><em>Before: hairline strokes from AutoCAD PDFs</em></sub>
       </td>
+    </tr>
+    <tr>
       <td align="center">
-        <img src="docs/After.png" alt="After: thicker, readable lines" width="45%" /><br/>
+        <img src="docs/After.png" alt="After: thicker, readable lines"/><br/>
         <sub><em>After: minimum line width enforced (e.g., 3 pt)</em></sub>
       </td>
     </tr>
@@ -80,4 +82,5 @@ This repo contains a single script: `PDF-hairline-fix.py` with an example call a
 
 ## License
 MIT License. See `LICENSE` for details.
+
 
