@@ -63,19 +63,6 @@ This repo contains a single script: `PDF-hairline-fix.py` with an example call a
    python .\PDF-hairline-fix.py
    ```
 
-## Build GUI (Windows)
-
-Steps to build the standalone GUI executable (PDFHairlineFix.exe):
-
-```cmd
-python -m venv .venv
-.venv\Scripts\Activate.bat
-pip install -r requirements.txt
-pyinstaller PDFHairlineFix-GUI.spec
-```
-
-Result: `dist\PDFHairlineFix.exe`
-
 ## Parameter
 - `min_width` (float): Minimum stroke width to enforce. Example values:
   - 0.25–0.5 pt for subtle thickening
@@ -88,6 +75,19 @@ Result: `dist\PDFHairlineFix.exe`
 - Some PDFs may have complex content streams; test results visually
 - Only modifies vector line widths; does not affect images or raster content
 
+## Build GUI (Windows) - OPTIONAL
+
+Steps to build the standalone GUI executable (PDFHairlineFix.exe):
+
+```cmd
+python -m venv .venv
+.venv\Scripts\Activate.bat
+pip install -r requirements.txt
+pyinstaller PDFHairlineFix-GUI.spec
+```
+
+Result: `dist\PDFHairlineFix.exe`
+
 ## FAQ
 - What happens to pages without content streams? They are copied unchanged.
 - Is the change reversible? Your original PDF is preserved and a new file is created.
@@ -95,5 +95,6 @@ Result: `dist\PDFHairlineFix.exe`
 
 ## License
 MIT License. See `LICENSE` for details.
+
 
 
