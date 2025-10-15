@@ -1,0 +1,8 @@
+# Core build tool
+PyInstaller
+
+# Drag and drop support
+tkinterdnd2
+
+# PyPDF
+PyPDF

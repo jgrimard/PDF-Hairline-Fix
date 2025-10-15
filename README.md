@@ -63,6 +63,19 @@ This repo contains a single script: `PDF-hairline-fix.py` with an example call a
    python .\PDF-hairline-fix.py
    ```
 
+## Build GUI (Windows)
+
+Steps to build the standalone GUI executable (PDFHairlineFix.exe):
+
+```cmd
+python -m venv .venv
+.venv\Scripts\Activate.bat
+pip install -r requirements.txt
+pyinstaller PDFHairlineFix-GUI.spec
+```
+
+Result: `dist\PDFHairlineFix.exe`
+
 ## Parameter
 - `min_width` (float): Minimum stroke width to enforce. Example values:
   - 0.25–0.5 pt for subtle thickening
